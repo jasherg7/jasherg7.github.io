@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Written by Jasher Grunau -->
+<!-- last updated 10/17/19 -->
+
+<!-- welcome to my website! gotta warn you: I'm pretty new to 
+web development, so if my coding habits and syntax are atrocious,
+please go easy on me-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PID Motor Controller</title>
+    <style>
+        body {
+            font-family: "Times New Roman";
+            line-height: 1.5em;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="website_title">PID Motor Controller</h1>
+    <h3> Senior Design Project: ECE 4534</h2>
+        <h2>by Jasher Grunau</h2>
+        <h3>Abstract</h3>
+        <p> A rover must be able to coordinate itself enough while moving to deliver it's package to a certain location. The given motors are low quality and yeild lots of error. To correct enough of this error, while keeping the system stable, a PID (Proportional
+        Integral Derivative) Controller is created and tuned accurately enough so that the rover will consistently reach its coordinates within a +/- 1cm error, every 30cm of travel. </p>
+
+        <h3>Introduction</h3>
+        <p>This project takes place in a class called <i>Embedded Systems Design</i>, which is a capstone class for Computer Engineering students at Virginia Tech. All students are grouped into 4's, and we're each given a board that we must learn to use
+            effectively. After lots of planning and paperwork, we plan out our long team project. We each had to implement a board and the team must use a server. My professor personally issued me a challenge to create the entire server myself. Asking
+            him why I should double my workload, he simply said "well it'd look good on a resume." Good enough for me. Aside from that, I was in charge of configuring my board to operate a motor system for traversing a rover in a specified path of travel.
+            In total, I yielded two senior design projects:
+            <ol>
+                <li>The Server system and</li>
+                <li>The Motor system</li>
+            </ol>
+            This page is about <b>#2: The Motor System</b>.</p>
+
+        <h3>Planning</h3>
+        <a href="https://ibb.co/YTcHXFw"><img src="https://i.ibb.co/2YvGS1H/Task-Diagram.jpg" alt="Task-Diagram" border="0"></a>
+
+        <h3>Hardware Used</h3>
+
+</body>
+
+</html>
