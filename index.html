@@ -106,25 +106,42 @@ please go easy on me-->
     <p style="margin-left: 30px">Working on the page</p>
 
     <h3 style="margin-left: 20px">PID Motor Controller</h3>
-    <p style="margin-left: 30px">Working on the page</p>
+    <p style="margin-left: 30px">Working on the page. See the progress <a href="https://jasher.tech/PID_motor_controller">here</a></p>
 
     <h3 style="margin-left: 20px">“<i>The Legend of Zelda: A Link Between Time</i>"</h3>
-    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney. </b>I'm trying to convert the ProcessingJS code developed on Khan's website to the more universal version, and it's taking a while. You can <a target="_blank" href="https://www.khanacademy.org/computer-science/final-project-ece_4524/4974378774855680"> CLICK HERE TO PLAY IT</a>        on Khan's site until I get it working in this environment.</p>
-    <script src="https://www.khanacademy.org/computer-science/final-project-ece_4524/4974378774855680/embed.js?editor=yes&buttons=no&author=yes&embed=yes"></script>
-    <h3 style="margin-left: 20px">Computer Vision Team</h3>
-    <p style="margin-left: 30px">If you would like to see my team's website, click <a href="https://www.robogrinder.com/"> here</a>.</p>
+    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney. </b>
+        <p></p>
+        <canvas style="margin-left: 50px" id="mycanvas"></canvas>
+        <p style="margin-left: 30px">When it's ready, you can see the game by itself <a href="https://jasher.tech/game">here</a>.</p>
+        <script src="https://www.khanacademy.org/computer-science/final-project-ece_4524/4974378774855680/embed.js?editor=yes&buttons=no&author=yes&embed=yes"></script>
+        <h3 style="margin-left: 20px">Computer Vision Team</h3>
+        <p style="margin-left: 30px">If you would like to see my team's website, click <a href="https://www.robogrinder.com/"> here</a>.</p>
 
-    <h3 style="margin-left: 20px">MIPS Assembly Simulator</h3>
-    <p style="margin-left: 30px">Working on this page</p>
+        <h3 style="margin-left: 20px">MIPS Assembly Simulator</h3>
+        <p style="margin-left: 30px">Working on this page</p>
 
-    <h2 id="awards_loc"> Achievements </h2>
-    <ul>
-        <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
-        <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-        <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-        <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
-        <li>Eagle Scout</li>
-    </ul>
+        <h2 id="awards_loc"> Achievements </h2>
+        <ul>
+            <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
+            <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
+            <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
+            <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
+            <li>Eagle Scout</li>
+        </ul>
 </body>
+
+<!-- run all the JavaScript stuff -->
+<!-- Include the processing.js library -->
+<script src="https://jasher.tech/processing-1.4.8.min.js"></script>
+
+<!-- The name of the Program Source Code goes here -->
+<script src="https://jasher.tech/Zelda_game.js"></script>
+
+<script type="application/javascript">
+    //get the canvas that Processing-js will use
+    var canvas = document.getElementById("mycanvas");
+    //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc);
+</script>
 
 </html>
