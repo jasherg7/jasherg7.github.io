@@ -1,147 +1,41 @@
+<!-- Open template.js, paste your Program into the commented part and 
+Save As NameOfProgram.js
+then at the bottom of this page, change  
+<script src="template.js"></script>  to 
+<script src="NameOfProgram.js"></script> 
+and Save as NameOfProgram.html -->
+
 <!DOCTYPE html>
-
-<!-- Written by Jasher Grunau -->
-<!-- last updated 10/17/19 -->
-
-<!-- welcome to my website! gotta warn you: I'm pretty new to 
-web development, so if my coding habits and syntax are atrocious,
-please go easy on me-->
-
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Resume Website</title>
-    <style>
-        body {
-            font-family: "Calluna", "Times New Roman";
-            line-height: 1.5em;
-            text-align: left;
-        }
-        
-        #status {
-            text-align: center;
-        }
-        
-        #github_statement {
-            text-align: center;
-        }
-        
-        #website_title {
-            text-align: center;
-            font-size: 3em;
-        }
-        
-        #self_portrait {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        a {
-            color: rgb(238, 162, 64);
-        }
-        
-        b {
-            color: rgb(65, 118, 197);
-            font-size: 1.1em;
-        }
-        
-        #Computer_engineering_highlight {
-            color: rgb(65, 118, 197);
-        }
-    </style>
+<!-- start of the document -->
+<html> 
+ <!-- The header. Information here doesn't make up elements of the webpage. We'll define all the javascript stuff at the end, so we just put the title here. -->
+ <head>
+ <!-- Title to be displayed in browser -->
+    <title>Legend of Zelda: a Link between Time</title> 
 </head>
-
-<body>
-    <h1 id="website_title">JASHER GRUNAU</h1>
-    <p id="status">*Note: sorry... website is still under development, so things are still quite incomplete
+ 
+ <!-- The body of the webpage, where all visible stuff lies. -->
+ <body>
+    <p align="center"> 
+	<h1>Legend of Zelda: a Link between Time<h1>
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
     </p>
-    <p id="github_statement">Also my github is <a target="_blank" href="https://github.com/jasherg7">here</a> if you're looking for it</p>
+ </body>
 
-    <!-- I uploaded my picture at https://ibb.co/yPHZ0SB-->
-    <img id="self_portrait" src="https://i.ibb.co/zxqBsJH/20170318-225619.png" width="200">
 
-    <h2>Contents</h2>
-    <ul id="content_info">
-        <a href="#objective_loc">
-            <li>Objective</li>
-        </a>
-        <a href="#education_loc">
-            <li>Education</li>
-        </a>
-        <a href="#skills_loc">
-            <li>Skills</li>
-        </a>
-        <a href="#projects_loc">
-            <li>Featured Projects and Experience</li>
-        </a>
-        <a href="#awards_loc">
-            <li>Achievements</li>
-        </a>
-    </ul>
-
-    <h2 id="objective_loc">Objective</h2>
-    <p id="objective_content" style="margin-left: 20px">
-        Recent graduate in Computer Engineering seeking entry-level position in software engineering</p>
-    <h2 id="education_loc">Education</h2>
-    <p id="education_content" style="margin-left: 20px" style="text-align:left;">
-        <b id="Computer_engineering_highlight">B.S. Computer Engineering,</b> Virginia Tech, Blacksburg, VA
-        <span style="float:right;">
-            August 2019
-        </span>
-    </p>
-
-    <h2 id="skills_loc">Skills</h2>
-    <ul>
-        <li><b>Programming Languages:</b> C++, Python, C, Javascript, Bash, Verilog, MIPS assembly</li>
-        <li><b>Markup Languages:</b> HTML, JSON, XML, LaTeX</li>
-        <li><b>Libraries:</b> OpenCV, Qt</li>
-        <li><b>Databases:</b> MongoDB</li>
-        <li><b>Operating Systems:</b> FreeRTOS, Unix based systems</li>
-    </ul>
-
-    <h2 id="projects_loc"> Featured Projects and Experience </h2>
-    <h3 style="margin-left: 20px">Server for Embedded Systems</h3>
-    <p style="margin-left: 30px">Working on the page</p>
-
-    <h3 style="margin-left: 20px">PID Motor Controller</h3>
-    <p style="margin-left: 30px">Working on the page. See the progress <a href="https://jasher.tech/PID_motor_controller">here</a></p>
-
-    <h3 style="margin-left: 20px">“<i>The Legend of Zelda: A Link Between Time</i>"</h3>
-    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney. </b>
-        <p></p>
-        <canvas style="margin-left: 50px" id="mycanvas"></canvas>
-        <p style="margin-left: 30px">When it's ready, you can see the game by itself <a href="https://jasher.tech/game">here</a>.</p>
-        <script src="https://www.khanacademy.org/computer-science/final-project-ece_4524/4974378774855680/embed.js?editor=yes&buttons=no&author=yes&embed=yes"></script>
-        <h3 style="margin-left: 20px">Computer Vision Team</h3>
-        <p style="margin-left: 30px">If you would like to see my team's website, click <a href="https://www.robogrinder.com/"> here</a>.</p>
-
-        <h3 style="margin-left: 20px">MIPS Assembly Simulator</h3>
-        <p style="margin-left: 30px">Working on this page</p>
-
-        <h2 id="awards_loc"> Achievements </h2>
-        <ul>
-            <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
-            <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-            <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-            <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
-            <li>Eagle Scout</li>
-        </ul>
-</body>
-
-<!-- run all the JavaScript stuff -->
-<!-- Include the processing.js library -->
-<script src="https://jasher.tech/processing-1.4.8.min.js"></script>
-
-<!-- The name of the Program Source Code goes here -->
-<script src="https://jasher.tech/Zelda_game.js"></script>
-
-<script type="application/javascript">
-    //get the canvas that Processing-js will use
-    var canvas = document.getElementById("mycanvas");
-    //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-    var processingInstance = new Processing(canvas, sketchProc);
-</script>
+ <!-- run all the JavaScript stuff -->
+ <!-- Include the processing.js library -->
+ <script src="https://jasher.tech/processing-1.4.8.min.js"></script> 
+ 
+ <!-- The name of the Program Source Code goes here -->
+ <script src="https://jasher.tech/Zelda_game.js"></script> 
+ 
+ <script type="application/javascript">
+  //get the canvas that Processing-js will use
+  var canvas = document.getElementById("mycanvas"); 
+  //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+  var processingInstance = new Processing(canvas, sketchProc); 
+ </script>
 
 </html>
