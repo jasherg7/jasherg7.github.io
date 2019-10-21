@@ -27,24 +27,29 @@ please go easy on me-->
     <h3> Senior Design Project: ECE 4534</h2>
         <h2>by Jasher Grunau</h2>
         <h3>Abstract</h3>
-        <p> A rover must be able to coordinate itself enough while moving to deliver it's package to a certain location. The given motors are low quality and yeild lots of error. To correct enough of this error, while keeping the system stable, a PID (Proportional
-        Integral Derivative) Controller is created and tuned accurately enough so that the rover will consistently reach its coordinates within a +/- 1cm error, every 30cm of travel. </p>
+        <p> An autonomous rover must be able to coordinate its steering direction well enough while in motion to ensure that it will arrive at its destination. The given motors are low quality and yeild an unexpectedly large amount of error. In order to correct
+            this error effectively and keep the system stable, a PID (Proportional Integral Derivative) Controller is implimented. It is created, tuned, and tested to be accurate enough for the rover to consistently reach its coordinates with no more
+            than +/- 1cm error, every 30cm of travel. </p>
 
-        <h3>Introduction</h3>
+        <h3>Context</h3>
+
         <p>This project takes place in a class called <i>Embedded Systems Design</i>, which is a capstone class for Computer Engineering students at Virginia Tech. All students are grouped into 4's, and we're each given a board that we must learn to use
-            effectively. After lots of planning and paperwork, we plan out our long team project. We each had to implement a board and the team must use a server. My professor personally issued me a challenge to create the entire server myself. Asking
-            him why I should double my workload, he simply said "well it'd look good on a resume." Good enough for me. Aside from that, I was in charge of configuring my board to operate a motor system for traversing a rover in a specified path of travel.
-            In total, I yielded two senior design projects:
-            <ol>
-                <li>The Server system and</li>
-                <li>The Motor system</li>
-            </ol>
-            This page is about <b>#2: The Motor System</b>.</p>
+            effectively. After lots of planning and paperwork, we plan out our long team project. We had decided to create a small-scale, autonomous factory with an LED lighting system, a robotic arm, a PIXY cam, and a rover. This all takes place as the
+            role for the Delivery Rover.</p>
 
-        <h3>Planning</h3>
+            <a href="https://ibb.co/sjzXHt9"><img src="https://i.ibb.co/TcdNLrM/cutOut.png" alt="cutOut" border="0"></a>
+
+        <h3>Environment</h3>
+
+        <p>This project uses a microcontroller (PIC32MX series). We use FreeRTOS to simulate a multithreaded environment with our limited board, and we program in C. To be consistent when reading from queues and interracting with other threads, we use a
+            programming model created by the engineering department. To debug and monitor the code executing in a real time environment, we output location values in the code through GPIO ports. We read these values with a logic analyzer and record them
+            over time. Looking back over the record, we can see what is happening in the code.</p>
+
+        <h3>About PID Control</h3>
+       
+
+        <h3>Software's Threading Diagram</h3>
         <a href="https://ibb.co/YTcHXFw"><img src="https://i.ibb.co/2YvGS1H/Task-Diagram.jpg" alt="Task-Diagram" border="0"></a>
-
-        <h3>Hardware Used</h3>
 
 </body>
 
