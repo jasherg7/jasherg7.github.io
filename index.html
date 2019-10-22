@@ -38,7 +38,11 @@ please go easy on me-->
             margin-right: auto;
         }
         
-        a {
+        .notbold {
+            font-weight: normal
+        }
+        
+        ​ a {
             color: rgb(238, 162, 64);
         }
         
@@ -102,46 +106,65 @@ please go easy on me-->
     </ul>
 
     <h2 id="projects_loc"> Featured Projects and Experience </h2>
-    <h3 style="margin-left: 20px">Server for Embedded Systems</h3>
-    <p style="margin-left: 30px">Working on the page</p>
 
-    <h3 style="margin-left: 20px">PID Motor Controller</h3>
-    <p style="margin-left: 30px">Working on the page. See the progress <a href="https://jasher.tech/PID_motor_controller">here</a></p>
 
-    <h3 style="margin-left: 20px">“<i>The Legend of Zelda: A Link Between Time</i>"</h3>
-    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney. </b>
-        <p></p>
-        <canvas style="margin-left: 50px" id="mycanvas"></canvas>
-        <p style="margin-left: 30px">When it's ready, you can see the game by itself <a href="https://jasher.tech/game">here</a>.</p>
-        <script src="https://www.khanacademy.org/computer-science/final-project-ece_4524/4974378774855680/embed.js?editor=yes&buttons=no&author=yes&embed=yes"></script>
-        <h3 style="margin-left: 20px">Computer Vision Team</h3>
-        <p style="margin-left: 30px">If you would like to see my team's website, click <a href="https://www.robogrinder.com/"> here</a>.</p>
+    <h3 style="margin-left: 20px"><b>“<i>The Legend of Zelda: A Link Between Time</i> "</b><span class='notbold'>, Senior Design Project, <i>Programmed in Processing.JS</i></span></h3>
+    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney</b> as a senior design project. We must design a full functioning game using only Processing.JS's simple graphic library. Click <a href="https://jasher.tech/game">here</a> for the project's page.</p>
+    <canvas style="margin-left: 80px" id="mycanvas"></canvas>
+    <p style="margin-left: 30px"></p>
 
-        <h3 style="margin-left: 20px">MIPS Assembly Simulator</h3>
-        <p style="margin-left: 30px">Working on this page</p>
+    <h3 style="margin-left: 20px"><b>Computer Vision Team</b><span class='notbold'>, <i>RoboGrinder</i>, Shenzhen, China <i>Programmed in C++</i></span></h3>
 
-        <h2 id="awards_loc"> Achievements </h2>
-        <ul>
-            <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
-            <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-            <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-            <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
-            <li>Eagle Scout</li>
-        </ul>
+
+    <p style="margin-left: 30px"><i>RoboGrinder</i> is Virginia Tech's competitive robot team, primarily focused on the annual international robot battle compitition: <i>Robomaster</i>. It's held during the summers in Shenzhen, China, and hosted by <i>DJI</i>. My team's website can
+        be found <a href="https://www.robogrinder.com/"> here</a>.</p>
+
+    <p style="margin-left: 30px">The Computer Vision team of RoboGrinder is responsible to the autotonous functions of the robots in the compition. Specifically we focus on image processing for our robots' guns and turrets to automatically target enemies without the use of a pilot.
+    </p>
+    <ul style="margin-left: 30px">
+        <li>Design image processing and object detection software with OpenCV library.</li>
+        <li>Work on team with a massive language barrier</li>
+        <li>Document trips and handle technical writing to sponsors</li>
+    </ul>
+
+    <h3 style="margin-left: 20px"><b>Server for Embedded Systems</b><span class='notbold'>, Senior Design Project, <i>Programmed in Python</i></span></h3>
+
+    <p style="margin-left: 30px">A server system must to be able to connect with 5 clients and communicate via a customized network protocol in order to read and write information in a database.</p>
+
+    <ul style="margin-left: 30px">
+        <li>Design network communication protocol unique to our embedded systems</li>
+        <li>Create Reverse proxy server to establish connection with clients, multi thread communications, parse network packets, and process information</li>
+        <li>Implement Flask server and communicate with the reverse proxy server via HTTP requests</li>
+        <li> Make a MongoDB API, and use it as a database within the Flask Server</li>
+    </ul>
+    <h3 style="margin-left: 20px"><b>PID Motor Controller</b><span class='notbold'>, Senior Design Project, <i>Programmed in C</i></span></h3>
+    <p style="margin-left: 30px">An embedded system must be able to coordinate mulitple motors well enough to drive and steer a rover to a precise location. My project page is <a href="https://jasher.tech/PID_motor_controller">here</a></p>
+    <ul style="margin-left: 30px">
+        <li>Tested to consistently reach its coordinates with no more than +/- 1.0 cm error, every 30.0 cm of travel.</li>
+        <li>Design low level TCP communication for the system to communicate with a server.</li>
+        <li>Change P, I, and D constants in the embedded system through server communication for efficient debugging and testing.</li>
+        <li>Send motor error real time to the server, and plot the error over time to see how to monitor the stability of the system.</li>
+        <li> Use the stability plots to tune the PID control system via the PID constants on the server.</li>
+    </ul>
+
+    <h3 style="margin-left: 20px"><b>MIPS Assembly Simulator</b><span class='notbold'>, Design Project, <i>Programmed in C++</i></span></h3>
+    <p style="margin-left: 30px">Large individual project to simulate the MIPS Assembly compiler and its code execution.</p>
+    <ul style="margin-left: 30px">
+        <li>Use Git and CMAKE for project</li>
+        <li>Create robust unit testing for 100% code coverage</li>
+        <li>Write language parser for MIPS assembly language </li>
+        <li>Use object-oriented design for command execution and memory allocation </li>
+        <li>Multi-thread environment with the Qt graphics library </li>
+    </ul>
+
+    <h2 id="awards_loc"> Achievements </h2>
+    <ul>
+        <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
+        <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
+        <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
+        <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
+        <li>Eagle Scout</li>
+    </ul>
 </body>
-
-<!-- run all the JavaScript stuff -->
-<!-- Include the processing.js library -->
-<script src="https://jasher.tech/processing-1.4.8.min.js"></script>
-
-<!-- The name of the Program Source Code goes here -->
-<script src="https://jasher.tech/Zelda_game.js"></script>
-
-<script type="application/javascript">
-    //get the canvas that Processing-js will use
-    var canvas = document.getElementById("mycanvas");
-    //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-    var processingInstance = new Processing(canvas, sketchProc);
-</script>
 
 </html>
