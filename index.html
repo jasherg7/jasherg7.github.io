@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <!-- Written by Jasher Grunau -->
 <!-- last updated 10/17/19 -->
@@ -7,174 +8,253 @@
 web development, so if my coding habits and syntax are atrocious,
 please go easy on me-->
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Resume Website</title>
-    <style>
-        body {
-            font-family: "Calluna", "Times New Roman";
-            line-height: 1.5em;
-            text-align: left;
-        }
-        
-        #status {
-            text-align: center;
-        }
-        
-        #github_statement {
-            text-align: center;
-        }
-        
-        #website_title {
-            text-align: center;
-            font-size: 3em;
-        }
-        
-        #self_portrait {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .notbold {
-            font-weight: normal;
-        }
-        
-        ​ a {
-            color: rgb(238, 162, 64);
-        }
-        
-        b {
-            color: rgb(65, 118, 197);
-            font-size: 1.1em;
-        }
-        
-        #Computer_engineering_highlight {
-            color: rgb(65, 118, 197);
-        }
-    </style>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Jasher's Website and Resume</title>
+
+     <style type="text/css">
+        * { 
+			margin: 0; 
+			padding: 0; 
+		}
+        body { 
+			font: 16px Helvetica, Sans-Serif; 
+			line-height: 24px; 
+			background: url(images/noise.jpg); 
+		}
+        .clear { 
+			clear: both; 
+		}
+        #page-wrap { 
+			width: 800px; 
+			margin: 40px auto 60px; 
+		}
+        #pic { 
+			float: right; 
+			margin: -30px 0 0 0; 
+		}
+        h1 { 
+			margin: 0 0 16px 0; 
+			padding: 0 0 16px 0; 
+			font-size: 42px; 
+			font-weight: bold; 
+			letter-spacing: -2px; 
+			border-bottom: 1px solid #999; 
+		}
+        h2 { 
+			font-size: 20px; 
+			margin: 0 0 6px 0; 
+			position: relative; 
+		}
+        h2 span { 
+			position: absolute; 
+			bottom: 0; 
+			right: 0; 
+			font-style: italic; 
+			font-family: Georgia, Serif; 
+			font-size: 16px; 
+			color: #999; 
+			font-weight: normal; 
+		}
+        p { 
+			margin: 0 0 16px 0; 
+		}
+        a { 
+			color: #999; 
+			text-decoration: none; 
+			border-bottom: 1px dotted #999; 
+		}
+        a:hover { 
+			border-bottom-style: solid; 
+			color: black; 
+		}
+        ul { 
+			margin: 0 0 32px 17px; 
+		}
+        #objective { 
+			width: 500px; 
+			float: left; 
+		}
+        #objective p { 
+			font-family: Georgia, Serif; 
+			font-style: italic; 
+			color: #666; 
+		}
+        dt { 
+			font-style: italic; 
+			font-weight: bold; 
+			font-size: 18px; 
+			text-align: right; 
+			padding: 0 26px 0 0; 
+			width: 150px; 
+			float: left; 
+			height: 100px; 
+			border-right: 1px solid #999;  
+		}
+        dd { 
+			width: 600px; 
+			float: right; 
+		}
+        dd.clear { 
+			float: none; 
+			margin: 0; 
+			height: 15px; 
+		}
+     </style>
 </head>
 
 <body>
-    <h1 id="website_title">JASHER GRUNAU</h1>
-    <p id="github_statement">My github can be found <a target="_blank" href="https://github.com/jasherg7">here</a> if you're looking for it</p>
 
-    <!-- I uploaded my picture at https://ibb.co/yPHZ0SB-->
-    <img id="self_portrait" src="https://i.ibb.co/zxqBsJH/20170318-225619.png" width="200">
-
-    <h2>Contents</h2>
-    <ul id="content_info">
-        <a href="#objective_loc">
-            <li>Objective</li>
-        </a>
-        <a href="#education_loc">
-            <li>Education</li>
-        </a>
-        <a href="#skills_loc">
-            <li>Skills</li>
-        </a>
-        <a href="#projects_loc">
-            <li>Featured Projects and Experience</li>
-        </a>
-        <a href="#awards_loc">
-            <li>Achievements</li>
-        </a>
-    </ul>
-
-    <h2 id="objective_loc">Objective</h2>
-    <p id="objective_content" style="margin-left: 20px">
-        Recent graduate in Computer Engineering seeking entry-level position in software engineering</p>
-    <h2 id="education_loc">Education</h2>
-    <p id="education_content" style="margin-left: 20px" style="text-align:left;">
-        <b id="Computer_engineering_highlight">B.S. Computer Engineering,</b> Virginia Tech, Blacksburg, VA
-        <span style="float:right;">
-            August 2019
-        </span>
-    </p>
-
-    <h2 id="skills_loc">Skills</h2>
-    <ul>
-        <li><b>Programming Languages:</b> C++, Python, C, Javascript, Bash, Verilog, MIPS assembly</li>
-        <li><b>Markup Languages:</b> HTML, JSON, XML, LaTeX</li>
-        <li><b>Libraries:</b> OpenCV, Qt</li>
-        <li><b>Databases:</b> MongoDB</li>
-        <li><b>Operating Systems:</b> FreeRTOS, Unix based systems</li>
-    </ul>
-
-    <h2 id="projects_loc"> Featured Projects and Experience </h2>
-
-    <h3 style="margin-left: 20px"><b>Server for Embedded Systems</b><span class='notbold'>, Senior Design Project, <i>Programmed in Python</i></span></h3>
-
-    <p style="margin-left: 30px">A server system must to be able to connect with 5 clients and communicate via a customized network protocol in order to read and write information in a database.</p>
-
-    <ul style="margin-left: 30px">
-        <li>Design network communication protocol unique to our embedded systems</li>
-        <li>Create Reverse proxy server to establish connection with clients, multi thread communications, parse network packets, and process information</li>
-        <li>Implement Flask server and communicate with the reverse proxy server via HTTP requests</li>
-        <li> Make a MongoDB API, and use it as a database within the Flask Server</li>
-    </ul>
-    <h3 style="margin-left: 20px"><b>PID Motor Controller</b><span class='notbold'>, Senior Design Project, <i>Programmed in C</i></span></h3>
-    <p style="margin-left: 30px">An embedded system must be able to coordinate mulitple motors well enough to drive and steer a rover to a precise location. My project page is <a href="https://jasherg7.github.io/PID_motor_controller">here</a></p>
-    <ul style="margin-left: 30px">
-        <li>Tested to consistently reach its coordinates with no more than +/- 1.0 cm error, every 30.0 cm of travel.</li>
-        <li>Design low level TCP communication for the system to communicate with a server.</li>
-        <li>Change P, I, and D constants in the embedded system through server communication for efficient debugging and testing.</li>
-        <li>Send motor error real time to the server, and plot the error over time to see how to monitor the stability of the system.</li>
-        <li> Use the stability plots to tune the PID control system via the PID constants on the server.</li>
-    </ul>
+    <div id="page-wrap">
     
-    <h3 style="margin-left: 20px"><b>Computer Vision Team</b><span class='notbold'>, <i>RoboGrinder</i>, Shenzhen, China <i>Programmed in C++</i></span></h3>
-
-
-    <p style="margin-left: 30px"><i>RoboGrinder</i> is Virginia Tech's competitive robot team, primarily focused on the annual international robot battle compitition: <i>Robomaster</i>. It's held during the summers in Shenzhen, China, and hosted by <i>DJI</i>. My team's website can
-        be found <a href="https://www.robogrinder.com/"> here</a>.</p>
-
-    <p style="margin-left: 30px">The Computer Vision team of RoboGrinder is responsible to the autotonous functions of the robots in the compition. Specifically we focus on image processing for our robots' guns and turrets to automatically target enemies without the use of a pilot.
-    </p>
-    <ul style="margin-left: 30px">
-        <li>Design image processing and object detection software with OpenCV library.</li>
-        <li>Work on team with a massive language barrier</li>
-        <li>Document trips and handle technical writing to sponsors</li>
-    </ul>
+        <img src="images/IMG_0688.png" alt="Photo of Jasher" id="pic" />
     
-    <h3 style="margin-left: 20px"><b>“<i>The Legend of Zelda: A Link Between Time</i> "</b><span class='notbold'>, Senior Design Project, <i>Programmed in Processing.JS</i></span></h3>
-    <p style="margin-left: 30px">Created by <b>Jasher Grunau and  Alex Laisney</b> as a senior design project. We must design a full functioning game using only Processing.JS's simple graphic library. Click <a href="https://jasherg7.github.io/game">here</a> for the project's page.</p>
-    <canvas style="margin-left: 80px" id="mycanvas"></canvas>
-    <p style="margin-left: 30px"></p>
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">Jasher Grunau</h1>
+        
+            <p>
+                Cell: <span class="tel">434-825-6769</span><br />
+                Email: <a class="email" href="mailto:jasherg7@vt.edu">jasherg7@vt.edu</a>
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                Graduated in Computer Engineering from Virginia Tech. Seeking entry-level position in software engineering
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2>B.S. in Computer Engineering </h2>
+                <p><strong>Virginia Polytechnic Institute and State University </strong> <br> Blacksburg, VA 24061 <br> Graduated Auguest 2019<br />
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Technical Skills</dt>
+            <dd>
+                <p><strong>Programming Languages: </strong>Python, C, C++, Javascript, R, Matlab, Bash, Verilog, MIPS assembly
+                <br><strong>Markup Languages: </strong>HTML, JSON, XML, LaTeX
+                <br><strong>Libraries: </strong>OpenCV, Qt
+                <br><strong>Databases: </strong>MySQL, MongoDB
+                <br><strong>Operating Systems: </strong>FreeRTOS, Unix based systems</p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Projects and Experience</dt>
+            <dd>
+                <h2>P.I.D. Embedded Systems Controller <span>Capstone Project</span></h2>
+				<p>An embedded system must be able to coordinate 
+				mulitple motors well enough to drive and steer a rover to a precise location. 
+				<a href="https://jasherg7.github.io/PID_motor_controller">
+				Project Page</a></p>
+                <ul>
+                    <li>Tested to consistently reach its coordinates with no more than +/- 1.0 cm error, every 30.0 cm of travel.</li>
+					<li>Design low level TCP communication for the system to communicate with a server.</li>
+					<li>Change P, I, and D constants in the embedded system through server communication for efficient debugging and testing.</li>
+					<li>Send motor error real time to the server, and plot the error over time to see how to monitor the stability of the system.</li>
+					<li> Use the stability plots to tune the PID control system via the PID constants on the server.</li>
+                </ul>
+                
+				<h2>Reverse Proxy Server <span> Capstone Project</span></h2>
+				<p>A server system must to be able to connect with 5 clients and communicate via a customized network protocol in order to read and write information in a database.</p>
+				<ul>
+					<li>Design network communication protocol unique to our embedded systems</li>
+					<li>Create Reverse proxy server to establish connection with clients, multi thread communications, parse network packets, and process information</li>
+					<li>Implement Flask server and communicate with the reverse proxy server via HTTP requests</li>
+					<li> Make a MongoDB API, and use it as a database within the Flask Server</li>
+				</ul>
+				
+				<h2>Computer Vision Team<span> RoboGrinder (Robomasters) </span></h2>
+				<p>RoboGrinder is Virginia Tech's competitive robot team, primarily focused on 
+				the annual international robot battle compitition: <i>Robomaster</i>. It's held 
+				during the summers in Shenzhen, China, and hosted by <i>DJI</i>. My team's website 
+				can be found <a href="https://www.robogrinder.com/"> here</a>. The Computer Vision 
+				team of RoboGrinder is responsible to the autotonous functions of the robots in the 
+				compition. Specifically we focus on image processing for our robots' guns and turrets 
+				to automatically target enemies without the use of a pilot.</p>
+				<ul>
+					<li>Design image processing and object detection software with OpenCV library.</li>
+					<li>Work on team with a massive language barrier</li>
+					<li>Document trips and handle technical writing to sponsors</li>
+				</ul>
+				
+				
+                <h2>The Legend of Zelda: A Link Between Time <span>Senior Design Project</span></h2>
+				Created by <b>Jasher Grunau</b> and <b>Alex Laisney</b> as a senior design project. We must 
+				design a full functioning game using only Processing.JS's simple graphic library. 
+				<a href="https://jasherg7.github.io/game"> Play it here!</a></p>
+                <!--<canvas style="margin-left: 80px" id="mycanvas"></canvas> -->
+				
+				<h2>MIPS Assembly Simulator <span>Class Design Project</span></h2>
+				<p>Large individual project to simulate the MIPS Assembly compiler and its code execution.</p>
+				<ul>
+					<li>Use Git and CMAKE for project</li>
+					<li>Create robust unit testing for 100% code coverage</li>
+					<li>Write language parser for MIPS assembly language </li>
+					<li>Use object-oriented design for command execution and memory allocation </li>
+					<li>Multi-thread environment with the Qt graphics library </li>
+				</ul>
+				
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Achievements</dt>
+            <dd><ul>
+				<li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
+				<li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
+				<li>First prize for team <i>RoboGrinder</i>, Robomaster 2018  International Regional Competition</li>
+				<li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
+				<li>Eagle Scout</li>
+			</ul></dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd><ul>
+				<li>Cyberbullying</li>
+				<li>Gaslighting women</li>
+				<li>Lifting weights</li>
+				<li>Boofing Cocain</li>
+				<li>Tax Evasion</li>
+			</ul></dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
 
-    <h3 style="margin-left: 20px"><b>MIPS Assembly Simulator</b><span class='notbold'>, Design Project, <i>Programmed in C++</i></span></h3>
-    <p style="margin-left: 30px">Large individual project to simulate the MIPS Assembly compiler and its code execution.</p>
-    <ul style="margin-left: 30px">
-        <li>Use Git and CMAKE for project</li>
-        <li>Create robust unit testing for 100% code coverage</li>
-        <li>Write language parser for MIPS assembly language </li>
-        <li>Use object-oriented design for command execution and memory allocation </li>
-        <li>Multi-thread environment with the Qt graphics library </li>
-    </ul>
-
-    <h2 id="awards_loc"> Achievements </h2>
-    <ul>
-        <li>Third prize for team <i>RoboGrinder</i>, ICRA 2019 International A.I. Challenge</li>
-        <li>Second prize for team <i>RoboGrinder</i>, Robomaster 2018 Final Tournament</li>
-        <li>First prize for team <i>RoboGrinder</i>, Robomaster 2018  International Regional Competition</li>
-        <li>Third prize for team <i>RoboGrinder</i>, Robomaster 2017</li>
-        <li>Eagle Scout</li>
-    </ul>
 </body>
 
- <!-- run all the JavaScript stuff -->
- <!-- Include the processing.js library -->
- <script src="https://jasherg7.github.io/processing-1.4.8.min.js"></script> 
- 
- <!-- The name of the Program Source Code goes here -->
- <script src="https://jasherg7.github.io/Zelda_game.js"></script> 
- 
- <script type="application/javascript">
-  //get the canvas that Processing-js will use
-  var canvas = document.getElementById("mycanvas"); 
-  //pass the function sketchProc (defined in myCode.js) to Processing's constructor.
-  var processingInstance = new Processing(canvas, sketchProc); 
- </script>
+<!-- run all the JavaScript stuff -->
+<!-- Include the processing.js library -->
+<script src="https://jasherg7.github.io/processing-1.4.8.min.js"></script> 
+
+<!-- The name of the Program Source Code goes here -->
+<script src="https://jasherg7.github.io/Zelda_game.js"></script> 
+
+<script type="application/javascript">
+//get the canvas that Processing-js will use
+var canvas = document.getElementById("mycanvas"); 
+//pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+var processingInstance = new Processing(canvas, sketchProc); 
+</script>
+</html>
+
 </html>
