@@ -164,34 +164,42 @@ please go easy on me-->
             <dd>
 			
 				<h2>A.I. Currency Re-Allocation<span>Personal Project</span></h2>
-				<p>Use Machine Learning techniques to make a self-learning trading bot that can convert what's in my savings account into other 
-				currencies around the world. When the multiple currencies fluctuate from inflation and deflation, the bot would know when and 
-				how much of my currency should be moved onto another bank account or converted into another currency. It basically gambles in 
-				the Foreign Exchange Market to mitigate the rapid inflation in the US economy. I'm poor. I'm trying to save money here...</p>
+				<p>Use Machine Learning techniques to make a self-learning bot to predict relational inflation and deflation of currencies 
+				around the world. It basically models a future of the Foreign Exchange Market based on data gathered in the past. As the 
+				system gathers more data, it may become more accurate and may be a useful assistance to making wise financial investments 
+				in the future</p>
 				<ul>
 					<li>Mine data by sampling API and WebScrapping</li>
 					<li>Extract data from public documents with multiple acclimated parsers</li>
 					<li>Store data onto a MySQL Database (using MariaDB)</li>
 					<li>Multi-thread the project environment and use FICO Queues to simulate multiple clients for future integration</li>
-					<li>Quantify market trading methods into a system controller to be scale-able actions of exchange</li>
+					<li>Quantify market predicting methods into a system controller to be scale-able actions that can be tuned</li>
 					<li>Simulate the market to be an accurate reflection of reality while also making success measurable in that market</li>
 					<li>Design a visually helpful GUI to show the system processes for diagnostics and debugging</li>
-					<li>Visually model numerical results to help understand what trading methods work best and possibly reveal <i>why</i>
+					<li>Visually model numerical results to help understand what predictive methods work best and possibly reveal <i>why</i>
 					those methods are successful</li>
 					<li>Automate self optimization for a self-learning ability</li>
 				</ul>
 				
 				<h2>P.I.D. Embedded Systems Controller <span>Capstone Project</span></h2>
-				<p>An embedded system must be able to coordinate 
-				multiple motors well enough to drive and steer a rover to a precise location. 
+				<p>So far, most employers I talk to have no idea what a PID controller is. This is simply a design in the field of systems 
+				engineering. In robotics, there is inevitably a cross over with system design when software interacts with 
+				real-time mechanics and operates under real-time constraints on embedded computer systems. In the feedback loop between
+				my written software and the motor system in my rover robot, there are inconsistencies with response and a significant delay
+				in the feedback. Correcting error in the environment in an efficient manner can be really difficult without leading to 
+				system instability. For example, my rover would literally shake and tremble when attempting to travel because my software 
+				was rapidly over-correcting itself with delayed path reading. This problem was solved with a formal systems engineering 
+				method, and after researching and reading "PID without a PhD," I employed the Proportional Integral Derivative controller.
 				<a href="https://jasherg7.github.io/PID_motor_controller">
 				Project Page</a></p>
                 <ul>
-                    <li>Tested to consistently reach its coordinates with no more than +/- 1.0 cm error, every 30.0 cm of travel.</li>
-					<li>Design low level TCP communication for the system to communicate with a server.</li>
+                    <li>Tuned my rover's motor systems to consistently reach its coordinates with no more than +/- 1.0 cm error, every 
+					30.0 cm of travel.</li>
+					<li>Design low-level TCP communication off of a PIC32 board C programming and FreeRTOS to communicate with other Team 
+					members' PICs and for my designed server system.</li>
 					<li>Change P, I, and D constants in the embedded system through server communication for efficient debugging and testing.</li>
 					<li>Send motor error real time to the server, and plot the error over time to see how to monitor the stability of the system.</li>
-					<li> Use the stability plots to tune the PID control system via the PID constants on the server.</li>
+					<li>Use the stability plots to tune the PID control system via the PID constants on the server.</li>
                 </ul>
                 
 				<h2>Reverse Proxy Server <span> Capstone Project</span></h2>
@@ -199,7 +207,8 @@ please go easy on me-->
 				order to read and write information in a database.</p>
 				<ul>
 					<li>Design network communication protocol unique to our embedded systems</li>
-					<li>Create Reverse proxy server to establish connection with clients, multi thread communications, parse network packets, and process information</li>
+					<li>Create Reverse proxy server to establish connection with clients, multi thread communications, parse network packets, and 
+					process information</li>
 					<li>Implement Flask server and communicate with the reverse proxy server via HTTP requests</li>
 					<li> Make a MongoDB API, and use it as a database within the Flask Server</li>
 				</ul>
@@ -265,14 +274,14 @@ please go easy on me-->
             
             <dd class="clear"></dd>
             
-            <dt>Hobbies</dt>
+            <!-- <dt>Hobbies</dt>
             <dd><ul>
 				<li>Cyberbullying</li>
 				<li>Lifting weights</li>
 				<li>Gaslighting women</li>
 				<li>Boofing Cocaine</li>
 				<li>Tax Evasion</li>
-			</ul></dd>
+			</ul></dd> -->
             
             <dd class="clear"></dd>
         </dl>
