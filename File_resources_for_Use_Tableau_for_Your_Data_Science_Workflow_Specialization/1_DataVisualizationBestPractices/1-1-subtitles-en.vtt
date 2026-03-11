@@ -1,0 +1,774 @@
+WEBVTT
+
+1
+00:00:06.500 --> 00:00:10.290
+Hello everyone. This is
+Professor Majed Al-Ghandour
+
+2
+00:00:10.290 --> 00:00:13.260
+from UCI Division of
+Continuing Education.
+
+3
+00:00:13.260 --> 00:00:14.700
+I'm one of the instructors.
+
+4
+00:00:14.700 --> 00:00:16.770
+I would like to share with you
+
+5
+00:00:16.770 --> 00:00:19.425
+those videos practices using
+
+6
+00:00:19.425 --> 00:00:22.510
+Tableau for your
+data science class.
+
+7
+00:00:22.510 --> 00:00:24.505
+We'll cover a couple of module.
+
+8
+00:00:24.505 --> 00:00:27.090
+The first one,
+which for Course 1,
+
+9
+00:00:27.090 --> 00:00:29.895
+data visualization for
+best practices, module 1.
+
+10
+00:00:29.895 --> 00:00:33.660
+We'll go ahead and walkthrough
+Tableau and tell you about
+
+11
+00:00:33.660 --> 00:00:35.840
+data preparation
+and all the basics
+
+12
+00:00:35.840 --> 00:00:37.175
+that you need to
+start with Tableau.
+
+13
+00:00:37.175 --> 00:00:39.180
+Let's go ahead and do it.
+
+14
+00:00:40.610 --> 00:00:43.955
+You open Tableau, when
+you open Tableau,
+
+15
+00:00:43.955 --> 00:00:47.165
+you'll be able to see all
+the connection data types.
+
+16
+00:00:47.165 --> 00:00:49.325
+You can connect it
+to a Tableau server,
+
+17
+00:00:49.325 --> 00:00:51.830
+you can connect it
+to Excel, Text file,
+
+18
+00:00:51.830 --> 00:00:53.845
+JSON file, Microsoft Access,
+
+19
+00:00:53.845 --> 00:00:55.755
+you can connect it to SAS,
+
+20
+00:00:55.755 --> 00:00:57.615
+you can connect it to also more.
+
+21
+00:00:57.615 --> 00:00:59.900
+You can see, you can specify
+
+22
+00:00:59.900 --> 00:01:01.220
+all the data type that
+
+23
+00:01:01.220 --> 00:01:03.100
+you're interested
+in this case here.
+
+24
+00:01:03.100 --> 00:01:05.370
+Or you can also go to
+
+25
+00:01:05.370 --> 00:01:08.930
+SQL Server database engine,
+Oracle, Amazon, MySQL.
+
+26
+00:01:08.930 --> 00:01:10.625
+You can go more as well.
+
+27
+00:01:10.625 --> 00:01:12.470
+You can see there's a lot of
+
+28
+00:01:12.470 --> 00:01:14.990
+great database engines and
+
+29
+00:01:14.990 --> 00:01:17.305
+connection to your data
+that you're interested.
+
+30
+00:01:17.305 --> 00:01:20.430
+Definitely there's a lot
+of great set like here.
+
+31
+00:01:20.430 --> 00:01:23.390
+Let's go ahead and start
+working with our text file,
+
+32
+00:01:23.390 --> 00:01:25.085
+which is a comma separated.
+
+33
+00:01:25.085 --> 00:01:27.500
+This is the file that we
+interested to use it's called
+
+34
+00:01:27.500 --> 00:01:30.140
+superstore and you can see
+it as a comma separated.
+
+35
+00:01:30.140 --> 00:01:32.155
+Go and click on that,
+
+36
+00:01:32.155 --> 00:01:35.040
+and give it a couple of second.
+
+37
+00:01:35.040 --> 00:01:37.115
+The first thing we'll do,
+
+38
+00:01:37.115 --> 00:01:38.915
+we'll go ahead and
+get that sheet.
+
+39
+00:01:38.915 --> 00:01:41.510
+Because it's only one sheet
+you will have it here,
+
+40
+00:01:41.510 --> 00:01:44.420
+if not you can drag it as
+well as you can see there,
+
+41
+00:01:44.420 --> 00:01:45.965
+if you have a bunch of sheets,
+
+42
+00:01:45.965 --> 00:01:48.925
+you can drag them as well
+and make that connection.
+
+43
+00:01:48.925 --> 00:01:51.165
+You'll see the superstore,
+
+44
+00:01:51.165 --> 00:01:53.370
+that's the Excel file.
+
+45
+00:01:53.370 --> 00:01:55.230
+These are the sheets like
+
+46
+00:01:55.230 --> 00:01:57.915
+a table we drag them and
+make that connections.
+
+47
+00:01:57.915 --> 00:01:59.950
+When new, the first thing they
+
+48
+00:01:59.950 --> 00:02:01.820
+will give you only
+1,000 records.
+
+49
+00:02:01.820 --> 00:02:03.740
+What do you need to
+do, you need just type
+
+50
+00:02:03.740 --> 00:02:08.540
+9999 and press "Enter."
+
+51
+00:02:08.540 --> 00:02:10.445
+When you do that,
+
+52
+00:02:10.445 --> 00:02:13.700
+you will get the real data
+set as you see it here.
+
+53
+00:02:13.700 --> 00:02:16.210
+It's 9,426.
+
+54
+00:02:16.210 --> 00:02:19.055
+What you got, you got
+exactly the same order
+
+55
+00:02:19.055 --> 00:02:20.960
+of your sheet.
+
+56
+00:02:20.960 --> 00:02:23.120
+If you can see there's ABC,
+
+57
+00:02:23.120 --> 00:02:26.715
+which is text like Category.
+
+58
+00:02:26.715 --> 00:02:30.250
+You will see that there was
+a globe, which is city.
+
+59
+00:02:30.250 --> 00:02:32.660
+You will see ABC
+again, you see hash,
+
+60
+00:02:32.660 --> 00:02:36.845
+like a numeric, and
+so on, another hash.
+
+61
+00:02:36.845 --> 00:02:39.530
+You can scroll to
+the right side,
+
+62
+00:02:39.530 --> 00:02:43.765
+and you will see
+also this symbol.
+
+63
+00:02:43.765 --> 00:02:48.705
+You'll see Order ID again and
+all that good stuff as part
+
+64
+00:02:48.705 --> 00:02:53.295
+of your spreadsheet.
+Very cool things.
+
+65
+00:02:53.295 --> 00:02:57.620
+You can go to each of
+these categories and say,
+
+66
+00:02:57.620 --> 00:03:01.765
+describe for me how many items
+I have, how many members.
+
+67
+00:03:01.765 --> 00:03:04.850
+Tell you have, from the 9,426,
+
+68
+00:03:04.850 --> 00:03:07.355
+you have about 17 members
+
+69
+00:03:07.355 --> 00:03:10.750
+of categories that you
+group them as well.
+
+70
+00:03:10.750 --> 00:03:12.290
+We have appliances, we
+
+71
+00:03:12.290 --> 00:03:14.089
+have bookstores,
+we have computers,
+
+72
+00:03:14.089 --> 00:03:16.295
+we have labels, we have
+papers, and so on,
+
+73
+00:03:16.295 --> 00:03:19.285
+which is great, nice
+of descriptions.
+
+74
+00:03:19.285 --> 00:03:22.035
+You can go to, for example,
+
+75
+00:03:22.035 --> 00:03:24.319
+the ABC for the container
+
+76
+00:03:24.319 --> 00:03:26.630
+and tell you have seven members.
+
+77
+00:03:26.630 --> 00:03:28.990
+These are all my sets,
+
+78
+00:03:28.990 --> 00:03:31.550
+9,426, we have all of
+
+79
+00:03:31.550 --> 00:03:34.565
+these seven members
+as you see it there.
+
+80
+00:03:34.565 --> 00:03:38.540
+You can also go and look
+for the departments,
+
+81
+00:03:38.540 --> 00:03:40.080
+how many department we have?
+
+82
+00:03:40.080 --> 00:03:42.135
+You get the idea about how you
+
+83
+00:03:42.135 --> 00:03:45.720
+can looking for
+those informations.
+
+84
+00:03:45.720 --> 00:03:51.995
+You can go to any of these
+and you can also hide them.
+
+85
+00:03:51.995 --> 00:03:54.875
+When you hide them there
+no more departments.
+
+86
+00:03:54.875 --> 00:03:57.680
+Now you can see
+department is gone.
+
+87
+00:03:57.680 --> 00:04:00.070
+You can say show hidden field.
+
+88
+00:04:00.070 --> 00:04:03.350
+Now the department is enabled.
+
+89
+00:04:03.350 --> 00:04:04.820
+You will not see it
+on your worksheet
+
+90
+00:04:04.820 --> 00:04:06.440
+when you start designing it.
+
+91
+00:04:06.440 --> 00:04:09.365
+Definitely, you can bring
+it back if you want.
+
+92
+00:04:09.365 --> 00:04:12.365
+Just go drop it here
+again and unhide,
+
+93
+00:04:12.365 --> 00:04:14.635
+so now the department is back.
+
+94
+00:04:14.635 --> 00:04:16.800
+You can sort your department,
+
+95
+00:04:16.800 --> 00:04:19.425
+there's an icon here,
+you can click on it.
+
+96
+00:04:19.425 --> 00:04:21.080
+You can see now we start
+
+97
+00:04:21.080 --> 00:04:24.415
+sorting either ascending
+or descending.
+
+98
+00:04:24.415 --> 00:04:26.670
+You can always go
+
+99
+00:04:26.670 --> 00:04:30.830
+and rename the department
+to something else.
+
+100
+00:04:30.830 --> 00:04:32.240
+But usually, we keep it the
+
+101
+00:04:32.240 --> 00:04:33.860
+same like what you've got there,
+
+102
+00:04:33.860 --> 00:04:36.560
+so you're not confused about
+
+103
+00:04:36.560 --> 00:04:40.095
+the original dataset.
+You can escape.
+
+104
+00:04:40.095 --> 00:04:41.925
+There's a lot of
+thing you can do.
+
+105
+00:04:41.925 --> 00:04:46.325
+You can split as well if
+you have different names,
+
+106
+00:04:46.325 --> 00:04:48.560
+first name, last name,
+you can do a split,
+
+107
+00:04:48.560 --> 00:04:51.460
+and you can see those as well.
+
+108
+00:04:51.460 --> 00:04:53.270
+One of the things
+also you can do,
+
+109
+00:04:53.270 --> 00:04:55.610
+you can order your data.
+
+110
+00:04:55.610 --> 00:04:57.650
+The data that you see,
+
+111
+00:04:57.650 --> 00:05:00.920
+you go from the left to the
+right. It's categorical.
+
+112
+00:05:00.920 --> 00:05:03.035
+That's exactly
+matching the order
+
+113
+00:05:03.035 --> 00:05:05.110
+of the data source
+in your spreadsheet.
+
+114
+00:05:05.110 --> 00:05:06.515
+If you go on and say, hey,
+
+115
+00:05:06.515 --> 00:05:08.360
+change it to from A to Z.
+
+116
+00:05:08.360 --> 00:05:11.300
+Now we can see the
+Category is still
+
+117
+00:05:11.300 --> 00:05:14.720
+the first one and the last
+one is the Unit Price.
+
+118
+00:05:14.720 --> 00:05:19.755
+If you go back to the original
+and you go right side,
+
+119
+00:05:19.755 --> 00:05:22.560
+Category is the first one and
+
+120
+00:05:22.560 --> 00:05:25.050
+now the Unit Price as well
+that's exactly what we got.
+
+121
+00:05:25.050 --> 00:05:26.700
+But we can descending.
+
+122
+00:05:26.700 --> 00:05:29.415
+Now we see the
+Category at the end
+
+123
+00:05:29.415 --> 00:05:33.405
+and Unit Price in the beginning.
+
+124
+00:05:33.405 --> 00:05:35.510
+It's your call, how you
+
+125
+00:05:35.510 --> 00:05:37.850
+want to go and work
+with these as well.
+
+126
+00:05:37.850 --> 00:05:42.380
+Definitely you can also filter.
+
+127
+00:05:42.380 --> 00:05:45.105
+Any filter you like,
+so say we don't
+
+128
+00:05:45.105 --> 00:05:47.670
+interested to go and work
+in all of this data.
+
+129
+00:05:47.670 --> 00:05:50.340
+You can add a filter
+in the data source.
+
+130
+00:05:50.340 --> 00:05:51.630
+Of course, you can also add
+
+131
+00:05:51.630 --> 00:05:53.595
+a filter in the sheets itself.
+
+132
+00:05:53.595 --> 00:05:55.930
+That's exactly what we're
+going show you later on.
+
+133
+00:05:55.930 --> 00:05:58.400
+But this is where you
+say, I'm interested on,
+
+134
+00:05:58.400 --> 00:06:03.005
+for example, let's
+say for departments.
+
+135
+00:06:03.005 --> 00:06:05.650
+Let's find the Department
+very quick, here we go.
+
+136
+00:06:05.650 --> 00:06:08.405
+Then you say, I'm
+interested only on
+
+137
+00:06:08.405 --> 00:06:11.660
+the Department of the
+technology and say,
+
+138
+00:06:11.660 --> 00:06:15.360
+"Okay". Then say, "Okay".
+
+139
+00:06:15.360 --> 00:06:17.390
+Now if you go to
+the departments,
+
+140
+00:06:17.390 --> 00:06:23.045
+now we've dropped from 9,240
+something to 2,312 record.
+
+141
+00:06:23.045 --> 00:06:24.500
+Because you have only
+
+142
+00:06:24.500 --> 00:06:28.140
+thus technology
+that's your interest.
+
+143
+00:06:28.140 --> 00:06:29.520
+You can see there's a filter.
+
+144
+00:06:29.520 --> 00:06:31.035
+You can edit that filter.
+
+145
+00:06:31.035 --> 00:06:34.190
+Then you can go back and you
+can remove it or say, hey,
+
+146
+00:06:34.190 --> 00:06:36.360
+exclude technology,
+
+147
+00:06:36.360 --> 00:06:38.640
+it's another person
+who will manage it.
+
+148
+00:06:38.640 --> 00:06:43.445
+You can do those, exclude or
+include and work like that.
+
+149
+00:06:43.445 --> 00:06:46.130
+Definitely, it's fun to
+go and work with these.
+
+150
+00:06:46.130 --> 00:06:47.830
+You can do a Wildcard,
+
+151
+00:06:47.830 --> 00:06:50.085
+you can do Condition,
+you can do Top.
+
+152
+00:06:50.085 --> 00:06:52.040
+Very nice filters,
+you can do that.
+
+153
+00:06:52.040 --> 00:06:54.665
+But you can remove
+it and say, "Okay."
+
+154
+00:06:54.665 --> 00:06:55.970
+Now it's been removed,
+
+155
+00:06:55.970 --> 00:07:00.160
+you go back to the
+original 9,426.
+
+156
+00:07:00.160 --> 00:07:04.460
+I hope this give you a great
+idea starting how you can
+
+157
+00:07:04.460 --> 00:07:09.320
+connect with your data
+sources as we've done.
+
+158
+00:07:09.320 --> 00:07:10.730
+When you are ready for this,
+
+159
+00:07:10.730 --> 00:07:13.100
+I'll go right away
+to go and save it.
+
+160
+00:07:13.100 --> 00:07:20.190
+Save As, and let's call
+it Demao-Tableau_UCI.
+
+161
+00:07:23.150 --> 00:07:27.180
+Always I recommend
+change this to twbx,
+
+162
+00:07:27.180 --> 00:07:29.430
+so you include the
+data with that.
+
+163
+00:07:29.430 --> 00:07:32.935
+We'll come back to show you
+next steps in the next video.
+
+164
+00:07:32.935 --> 00:07:34.975
+You save it. Now,
+
+165
+00:07:34.975 --> 00:07:36.125
+it is already there.
+
+166
+00:07:36.125 --> 00:07:38.270
+It's being saved,
+it's been titled.
+
+167
+00:07:38.270 --> 00:07:40.910
+With that, we'll
+go ahead and stop
+
+168
+00:07:40.910 --> 00:07:42.470
+the video so we'll connect
+
+169
+00:07:42.470 --> 00:07:45.060
+you with the next
+module. Thank you.
