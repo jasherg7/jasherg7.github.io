@@ -1,0 +1,47 @@
+[MUSIC] A graph or chart uses visual elements
+to communicate information about data, about numbers and related facts. Just as grammar now owns verbs,
+adjectives and other parts of speech, provides a protocol for
+communicating ideas with language. You can think of a grammar of
+graphics as a protocol for communicating data concepts
+with visualizations. This grammar of graphics, strives to make
+visualizations as intuitive as possible. So anyone looking at
+a graphic can quickly and effortlessly understand
+the underlying data. The grammar of graphics has four basic
+layers, starting with the data itself, followed by aesthetics, scales. And finally design which
+ties everything together. Let's take a simple example and
+see how we can apply this grammar. Suppose you're an investor tracking
+the stock of a particular rocket company. Your data consists of daily values for
+the stocks opening price, closing price, high value,
+low value and volume of shares traded. To see how things change over time,
+you start by creating a graph that his dates along the X axis and
+data values along the Y axis. You can choose dots as your aesthetic, with the distance of
+each dot from the X axis. Corresponding to a specific value for
+each date, which comprises your scale. Now, you obviously don't want to
+plot everything on the same graph. It would be too messy to be useful,
+even if you applied color or shape aesthetic to
+the different quantities. So you start by focusing on just one
+value, the stock's closing price. You can easily see how the price went up
+sharply toward the end of January and then quickly drop. But be careful,
+you might miss some useful information. Adding a visual cue lines
+connecting the dots, reveals an interesting structure,
+a double hump. Now, through intentional design, you can tell a story that explains more
+deeply what the numbers are communicating. From your experience in the world of
+finance, you surmise that the rocket company's stock price followed
+the evolution of an asset bubble. The similarity between
+the rocket company graph and an example graph depicting
+a typical bubble. Solidifies your conclusion and serves as
+a starting point for further analysis. For instance,
+you can develop a new graphic by looking at additional information
+to just the closing price values. And mapping that data to
+a different set of aesthetics. For each date, you can use a thin vertical
+line to represent the range of high and low stock prices. The days volatility and
+bars placed on top of the vertical lines to indicate the difference between
+opening and closing prices. Blue bars indicate that the stock
+closed higher than it opened and red bars indicate that it closed lower. Thus the addition of the new aesthetics
+reveals that opening prices were mostly higher than closing prices. And that the run up to the spike,
+came along with very high volatility, a narrative is beginning to take shape. Finally, you can apply some
+statistical analysis to the data, such as calculating the rolling
+volatility for each date. And plotting it as a shaded area on
+top of the closing price graph line. The combination of this derived
+quantity with raw data, further develops your insight
+into what happened historically.
